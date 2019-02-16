@@ -1,0 +1,67 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+body{
+  background: url(../images/body.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 32px;
+}
+.leftbutton{
+  float:right;
+  margin: 2px;
+}
+.divImage{
+  background-image: url("../images/header.jpg");
+  padding :5px;
+}
+.navbar{
+  padding: .5rem 21rem;
+}
+.transp{
+  background-color :none;
+}
+ul.dropdown-menu {
+  background-color: blue;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 30px;
+  text-align: center;
+}
+.formwidth{
+  padding: 12px;
+  margin: 0 auto;
+  width:100%
+}
+.centerAligh{
+  text-align:center
+}
+.transp{
+  background-color:none;
+}
+.formcolour{
+  background-color: black;
+}3

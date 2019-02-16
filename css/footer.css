@@ -1,0 +1,92 @@
+
+
+$dk-blue: #1E83AE;
+$blue: #3D5B94;
+$light-blue: #3DACDD;
+$green: #6dcd9a;
+$social-size: 1.2em;
+$social-width: 20%;
+
+* {
+  margin: 0;
+  padding: 0;
+  @include box-sizing(border-box);
+}
+
+
+footer {
+  width: 100%;
+  bottom:0;
+  display: inline-block;
+  margin: 2em 0;
+  height: 100px;
+  background-image: url(../images/contact.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .copyright {
+    width: 50%;
+    float: left;
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+    p {
+      padding-left: 10%;
+      color: white;
+      font-size: 0.7em;
+      line-height: 70px;
+      text-transform: capitalize;
+      letter-spacing: 1px;
+      @media (max-width: 600px) {
+        text-align: center;
+        padding: 0;
+      }
+    }
+  }
+  .social {
+    width: 50%;
+    float: right;
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+    a {
+      float: left;
+      line-height: 70px;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      @include transition(all, 0.3s);
+      &:hover {
+        background-color: #222;
+        @include transition(all, .3s);
+      }
+    }
+  }
+}
+
+.linked {
+  background-color: $dk-blue;
+  font-size: $social-size;
+  width: $social-width;
+}
+
+.face {
+  background-color: $blue;
+  font-size: $social-size;
+  width: $social-width;
+}
+
+.tweet {
+  background-color: $light-blue;
+  font-size: $social-size;
+  width: $social-width;
+}
+
+.support {
+  background-color:yellow;
+  font-size: 0.8em;
+  width: 40%;
+}
+.allcenter {
+  text-align: center;
+}
