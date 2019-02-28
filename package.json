@@ -1,0 +1,19 @@
+{
+  "name": "pinkshoe-club",
+  "version": "1.0.0",
+  "description": "WOMEN WEBSITE ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssozi91/PINKSHOE-CLUB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ssozi91/PINKSHOE-CLUB/issues"
+  },
+  "homepage": "https://github.com/ssozi91/PINKSHOE-CLUB#readme"
+}

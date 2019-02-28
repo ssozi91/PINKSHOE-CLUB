@@ -1,0 +1,17 @@
+[
+   {
+      "websiteName":"carwow",
+      "contact":"joe@carwow.com",
+      "about":"car rental place"
+   },
+   {
+      "websiteName":"codebar",
+      "contact":"codebar@codebar.com",
+      "about":"workshops"
+   },
+   {
+      "websiteName":"xyz",
+      "contact":"xyz@xyz.com",
+      "about":"xyz"
+   }
+]
