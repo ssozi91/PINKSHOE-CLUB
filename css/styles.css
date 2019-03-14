@@ -1,67 +1,99 @@
-/* Fonts from Google Fonts - more at https://fonts.google.com */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
 
-body{
-  background: url(../images/body.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  @import url('https://fonts.googleapis.com/css?family=Raleway');
+* {
+  font-family: Raleway;
+  font-size: 14px;
+  box-sizing: border-box;
+  margin: 0px;
 }
 
-h1 {
-  font-family: "Merriweather", serif;
-  font-size: 32px;
-}
-.leftbutton{
-  float:right;
-  margin: 2px;
-}
-.divImage{
-  background-image: url("../images/header.jpg");
-  padding :5px;
-}
-.navbar{
-  padding: .5rem 21rem;
-}
-.transp{
-  background-color :none;
-}
-ul.dropdown-menu {
-  background-color: blue;
-}
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+  margin: 0px 0px;
 }
 
-div.gallery:hover {
-  border: 1px solid #777;
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 1px 0;
 }
 
-div.gallery img {
+
+/* Right column (page content) */
+.right {
+  flex: 65%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  font-family: ;
+  font-weight: 400;
   width: 100%;
-  height: auto;
+  font-size: 18px;
+  padding: 11px;
+  border:1px solid #ddd;
 }
 
-div.desc {
-  padding: 30px;
-  text-align: center;
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
 }
-.formwidth{
+
+#myMenu li a {
+  background-color: #e6e6e6;
   padding: 12px;
-  margin: 0 auto;
-  width:100%
+  text-decoration: none;
+  font-family: ;
+  font-weight: 400;
+  font-size: ;
+  color: black;
+  display: block
 }
-.centerAligh{
-  text-align:center
+
+#myMenu li a:hover {
+  background-color: #eee;
 }
-.transp{
-  background-color:none;
+
+#title {
+  padding: 0px;
+  background-color: #e6e6e6;
+  margin: 3px 0px;
+  border:1px solid #cccccc;
 }
-.formcolour{
-  background-color: black;
-}3
+
+#title h2 {
+  padding: 0px 10px;
+  margin: 15px 0px 15px 30px;
+  color: black;
+  font-family:
+  font-weight: 400;
+  word-wrap: break-word;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+nav li {
+  padding: 10px;
+  text-align: center;
+  font: 400 14px/30px ;
+  display: inline;
+}
+
+nav {
+  text-align: center;
+  margin: 20px 0px 15px 0px;
+}
+
+#img {
+  display: block;
+  text-align: center;
+  margin: 30px 0px 0px 0px;
+}
+
+img {
+  max-width: 120px;
+}
