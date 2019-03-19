@@ -1,3 +1,4 @@
+
 function readTextFile(file, callback) {
     var rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/json");
@@ -9,33 +10,39 @@ function readTextFile(file, callback) {
     }
     rawFile.send(null);
 }
-rreadTextFile("data.json", function(text){
-    var data = JSON.parse(text);
-    console.log(data);
-    var para = document.getElementById('para');
-    para.innerHTML = "THE FIRST WEBSITE IS"+" "+data[0].websiteName+" AND ITS CONTACT IS  "+data[0].contact;
+
+readTextFile("words.json", function(text){
+  var words = JSON.parse(text);
+  console.log("ray1");
+  console.log(words);
+  var txt="";
+    txt += "<select>"
+    words.forEach(function(element){
+      txt += "<option>" + element.keyword;
+    })
+    txt += "</select>"
+    document.getElementById("demo").innerHTML = txt;
 
 });
-
-// var obj, dbParam, xmlhttp, myObj, x, txt = "";
-// obj = { table: "customers", limit: 20 };
-// dbParam = JSON.stringify(obj);
-// xmlhttp = new XMLHttpRequest();
-// xmlhttp.onreadystatechange = function() {
-//   if (this.readyState == 4 && this.status == 200) {
-//     myObj = JSON.parse(this.responseText);
-//     txt += "<select>"
-//     for (x in myObj) {
-//       txt += "<option>" + myObj[x].name;
-//     }
-//     txt += "</select>"
-//     document.getElementById("demo").innerHTML = txt;
-//   }
-// };
-// xmlhttp.open("POST", "json_demo_db_post.php", true);
-// xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-// xmlhttp.send("x=" + dbParam);
-
+//usage:
+readTextFile("temp.json", function(text){
+    var data = JSON.parse(text);
+    console.log("ray");
+    console.log(data);
+      data.forEach(function(element){
+      console.log(element.List);
+      var newLine = document.createElement("p");
+      var para = document.createElement("a");
+      var att = document.createAttribute("href");
+      att.value = element.List;
+      para.setAttributeNode(att);
+      var node = document.createTextNode(element.List);
+      para.appendChild(node);
+      newLine.appendChild(para);
+      var parent = document.getElementById("div1");
+      parent.appendChild(newLine);
+    });
+  });
 
 
 function myFunction() {
@@ -53,3 +60,11 @@ function myFunction() {
     }
   }
 }
+
+
+function ChangeText(){
+  var sel = document.getElementById('demo');
+  var selects = sel.options[sel.selectedIndex].value;
+  console.log(selects );
+}
+ChangeText();

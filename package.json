@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ssozi91/PINKSHOE-CLUB/issues"
   },
-  "homepage": "https://github.com/ssozi91/PINKSHOE-CLUB#readme"
+  "homepage": "https://github.com/ssozi91/PINKSHOE-CLUB#readme",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
 }
