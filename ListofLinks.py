@@ -17,7 +17,7 @@ except ImportError:
     print("No module named 'google' found")
 
 # to search
-query = "freedom"
+query = "Women Founding Businesses"
 url=[]
 for j in search(query, tld="co.uk", num=1, stop=30, pause=1):
     url.append(j)
