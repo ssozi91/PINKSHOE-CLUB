@@ -45,26 +45,17 @@ readTextFile("temp.json", function(text){
   });
 
 
-function myFunction() {
-  var input, filter, ul, li, a, i;
-  input = document.getElementById("mySearch");
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("myMenu");
-  li = ul.getElementsByTagName("li");
-  for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
-    }
+function choices() {
+  var sel = document.getElementById("demo");
+  var selects = sel.options[sel.selectedIndex].text;
+  var obj = {
+    selectedOption:selects
   }
-}
+  console.log(obj.selectedOption)
+var selectTjson = JSON.stringify(obj);
 
-
-function ChangeText(){
-  var sel = document.getElementById('demo');
-  var selects = sel.options[sel.selectedIndex].value;
-  console.log(selects );
+var xhttp = new XMLHttpRequest();
+  xhttp.open("POST", "jsonRequestURL", true);
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.send(selectTjson);
 }
-ChangeText();
