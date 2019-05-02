@@ -1,0 +1,101 @@
+<!Doctype HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% load static %}
+<link rel="stylesheet" href="{% static "myapp/styles.css" %}">
+<script src="{% static 'myapp/csrf.ajax.js' %}"></script>
+<!-- <script src="{% static 'myapp/jquery.cookie.js' %}"></script> -->
+<script src="{% static "myapp/index.js" %}" charset="utf-8"></script>
+
+  <div id="img">
+  <img src="http://pinkshoeclub.com/wp-content/uploads/2016/09/PSlogopink2015-large.jpg" alt="Logo">
+  </div>
+  <nav>
+    <ul>
+      <!--About Dropdown-->
+      <div class="dropdown">
+        <li>
+          <button class="dropbtn">About</button>
+        </li>
+        <div class="drop-content">
+          <a href="http://pinkshoeclub.com/about/welcome/">Welcome</a>
+          <a href="http://pinkshoeclub.com/about/pink-shoe-philosophy/">Pink Shoe Philosophy</a>
+          <a href="http://pinkshoeclub.com/about/the-team/">The Team</a>
+          <a href="http://pinkshoeclub.com/pink-shoe-senate/">Pink Shoe Senate</a>
+          <a href="http://pinkshoeclub.com/about/patrons/">Patrons</a>
+          <a href="http://pinkshoeclub.com/about/partners/">Partners</a>
+        </div>
+      </div>
+      <!--Membership Dropdown-->
+      <div class="dropdown">
+        <li>
+          <button class="dropbtn">Membership</button>
+        </li>
+        <div class="drop-content">
+          <a href="http://pinkshoeclub.com/membership/why-pink-shoe/">Why Pink Shoe</a>
+          <a href="http://pinkshoeclub.com/membership/membership-faqs/">Membership FAQs</a>
+          <a href="http://pinkshoeclub.com/membership/becoming-a-member/">Becoming a Member</a>
+          <a href="http://pinkshoeclub.com/membership/membership-application/">Membership Application</a>
+          <a href="http://pinkshoeclub.com/membership/testimonials/">Testimonials</a>
+        </div>
+      </div>
+      <!--Events Dropdown-->
+      <div class="dropdown">
+        <li>
+          <button class="dropbtn">Events</button>
+        </li>
+        <div class="drop-content">
+          <a href="http://pinkshoeclub.com/events/forthcoming-events/">Forthcoming Events</a>
+          <a href="http://pinkshoeclub.com/events/past-events/">Past Events</a>
+          <a href="http://pinkshoeclub.com/events/enterprise-forum/">Enterprise Forum</a>
+          <a href="http://pinkshoeclub.com/events/leaders-forum/">Leaders Forum</a>
+          <a href="http://pinkshoeclub.com/events/fq-forum/">FQ Forum</a>
+        </div>
+      </div>
+      <!--Pink Sky Foundation Dropdown-->
+      <div class="dropdown">
+        <li>
+          <button class="dropbtn">Pink Sky Foundation</button>
+        </li>
+        <div class="drop-content">
+          <a href="http://pinkshoeclub.com/pink-sky-foundation/aims-objectives/">Aims &amp; objectives</a>
+          <a href="http://pinkshoeclub.com/pink-sky-foundation/trustees/">Trustees</a>
+          <a href="http://pinkshoeclub.com/pink-sky-foundation/boardable-programme/">Boardable Programme</a>
+          <a href="http://pinkshoeclub.com/pink-sky-foundation/protegee-programme/">Protegee Programme</a>
+          <a href="http://pinkshoeclub.com/pink-sky-foundation/menternships-returnships/">Menternships &amp; Returnships</a>
+        </div>
+      </div>
+  <!--Economic Blueprint Dropdown-->
+      <div class="dropdown">
+        <li>
+          <button class="dropbtn">Economic Blueprint</button>
+        </li>
+        <div class="drop-content">
+          <a href="http://pinkshoeclub.com/economic-blueprint/eb-roadshow/">EB Roadshow</a>
+          <a href="http://pinkshoeclub.com/economic-blueprint/markets-taskforce/">EB Markets</a>
+          <a href="http://pinkshoeclub.com/economic-blueprint/research-taskforce/">EB Data &amp; Information</a>
+          <a href="http://pinkshoeclub.com/economic-blueprint/finance-taskforce/">EB Finance</a>
+          <a href="http://pinkshoeclub.com/economic-blueprint/training-taskforce/">EB Training</a>
+          <a href="http://pinkshoeclub.com/economic-blueprint/marketing-taskforce/">EB Marketing</a>
+          <a href="http://pinkshoeclub.com/economic-blueprint/eb-portal-taskforce/">EB Digital Platform</a>
+          <a href="http://pinkshoeclub.com/know-grow/">EB Know &amp; Grow</a>
+          <a href="http://pinkshoeclub.com/economic-blueprint/get-involved/">Team EB - get involved&#33;</a>
+        </div>
+      </div>
+  </head>
+<body>
+<p class="select">
+  <select id="demo" onchange=choices() >
+</select>
+</p>
+
+  <div class="right">
+  </div>
+      <p id="para"></p>
+    <!-- <div id="div1">
+    </div> -->
+
+  <p id="paradise"></p> 
+</body>
+</html>
